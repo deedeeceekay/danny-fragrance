@@ -27,6 +27,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 @keyframes fx-rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @keyframes fx-drop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){details::details-content{transition:none!important}*,*::before,*::after{animation:none!important;transition:opacity 100ms ease!important}details[open]>summary svg,button:active{transform:none!important}}
+#newin-row,[style*="overflow-x: auto"]{scrollbar-width:none}#newin-row::-webkit-scrollbar,[style*="overflow-x: auto"]::-webkit-scrollbar{display:none}
 </style>
 </head>
 <body>
@@ -34,7 +35,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 
 <div style="background: #4B3326; color: #F6F5F2; height: 28px; display: flex; align-items: center; justify-content: center; font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em">Dispatched from the UK  /  30-day returns</div>
 
-<header style="max-width: 1320px; margin: 0 auto; padding: 0 112px; box-sizing: border-box">
+<header style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(24px, 5vw, 80px); box-sizing: border-box">
 <div style="display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 58px">
 <a href="search.html" aria-label="Search" style="background: none; border: 0; padding: 12px; margin-left: -12px; cursor: pointer; color: #4B3326; display: flex; justify-self: start; text-decoration: none">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
@@ -59,14 +60,14 @@ input:focus,textarea:focus{border-color:#4B3326}
 </header>
 
 <section style="position: relative; height: 620px; overflow: hidden; background: #D9DFE5; width: 100%; box-sizing: border-box">
-<div style="position: absolute; top: 0; bottom: 0; right: -4%; height: 100%; aspect-ratio: 1280 / 1024">
+<div style="position: relative; max-width: 1600px; height: 100%; margin: 0 auto; padding: 0 clamp(24px, 5vw, 80px); box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 20px">
+<div style="position: absolute; top: 0; bottom: 0; right: 0; height: 100%; aspect-ratio: 1280 / 1024">
 <img src="assets/hero-bottle.jpg" alt="Glass perfume bottle with a black cap" style="width: 100%; height: 100%; object-fit: contain; display: block">
 <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to right, #D9DFE5 0%, rgba(217,223,229,0) 30%, rgba(217,223,229,0) 85%, #D9DFE5 100%)"></div>
 </div>
-<div style="position: relative; max-width: 1320px; height: 100%; margin: 0 auto; padding: 0 112px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 20px">
-<h1 style="margin: 0; font-family: 'Hanken Grotesk', sans-serif; font-weight: 300; letter-spacing: -0.03em; font-size: 50px; line-height: 1.04; color: #4B3326; max-width: 620px">Luxury fragrance and everyday care. Minus the markup.</h1>
-<p style="margin: 0; font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.04em; font-size: 12px; line-height: 1.6; color: #4B3326; max-width: 520px">Perfume, hair, body and skincare from Lattafa, French Avenue, Weleda and more</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px">
+<h1 style="position: relative; margin: 0; font-family: 'Hanken Grotesk', sans-serif; font-weight: 300; letter-spacing: -0.03em; font-size: 50px; line-height: 1.04; color: #4B3326; max-width: 620px">Luxury fragrance and everyday care. Minus the markup.</h1>
+<p style="position: relative; margin: 0; font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.04em; font-size: 12px; line-height: 1.6; color: #4B3326; max-width: 520px">Perfume, hair, body and skincare from Lattafa, French Avenue, Weleda and more</p>
+<div style="position: relative; display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px">
 <a href="product-khamrah-qahwa.html" style="background: #4B3326; color: #F6F5F2; padding: 16px 28px; font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.04em; font-size: 12px; text-decoration: none">Shop fragrance</a>
 <a href="product-coconut-hair-mask.html" style="border: 1px solid #4B3326; color: #4B3326; padding: 15px 27px; font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.04em; font-size: 12px; text-decoration: none">Shop care</a>
 </div>
@@ -74,7 +75,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 </section>
 
 <section aria-label="Why shop with us" style="border-bottom: 1px solid #E4E2DE">
-<div style="max-width: 1320px; margin: 0 auto; box-sizing: border-box; padding: 20px 112px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px">
+<div style="max-width: 1600px; margin: 0 auto; box-sizing: border-box; padding: 20px clamp(24px, 5vw, 80px); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px">
 <div style="display: flex; align-items: center; gap: 12px; color: #4B3326"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v10H3z"></path><path d="M14 10h4l3 3v3h-7z"></path><circle cx="7" cy="18" r="1.6"></circle><circle cx="17" cy="18" r="1.6"></circle></svg><span style="font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.04em; font-size: 11px">Dispatched from the UK</span></div>
 <div style="display: flex; align-items: center; gap: 12px; color: #4B3326"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h11a5 5 0 0 1 0 10H9"></path><path d="M8 5L4 9l4 4"></path></svg><span style="font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.04em; font-size: 11px">30-day returns</span></div>
 <div style="display: flex; align-items: center; gap: 12px; color: #4B3326"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="1.5"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span style="font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.04em; font-size: 11px">Secure checkout</span></div>
@@ -83,7 +84,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 </section>
 
 
-<section style="max-width: 1320px; margin: 0 auto; padding: 56px 112px 64px; box-sizing: border-box">
+<section style="max-width: 1600px; margin: 0 auto; padding: 56px clamp(24px, 5vw, 80px) 64px; box-sizing: border-box">
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px">
 <h2 style="margin: 0; font-family: 'Hanken Grotesk', sans-serif; font-weight: 400; letter-spacing: -0.02em; font-size: 24px">New in</h2>
 <div style="display: flex; align-items: center; gap: 16px">
@@ -180,7 +181,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 </div>
 </section>
 
-<section style="max-width: 1320px; margin: 0 auto; box-sizing: border-box; padding: 24px 112px 60px">
+<section style="max-width: 1600px; margin: 0 auto; box-sizing: border-box; padding: 24px clamp(24px, 5vw, 80px) 60px">
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px">
 <h2 style="margin: 0; font-family: 'Hanken Grotesk', sans-serif; font-weight: 400; letter-spacing: -0.02em; font-size: 24px">Bestsellers</h2>
 <a href="search.html" style="font-size: 14px; text-decoration: none">View all</a>
@@ -214,7 +215,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 </section>
 
 <section style="border-top: 1px solid #E4E2DE; border-bottom: 1px solid #E4E2DE">
-<div style="max-width: 1320px; margin: 0 auto; box-sizing: border-box; padding: 60px 112px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 48px">
+<div style="max-width: 1600px; margin: 0 auto; box-sizing: border-box; padding: 60px clamp(24px, 5vw, 80px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 48px">
 <div style="flex: 1 1 380px; max-width: 520px; display: flex; flex-direction: column; gap: 16px">
 <h2 style="margin: 0; font-family: 'Hanken Grotesk', sans-serif; font-weight: 300; letter-spacing: -0.03em; font-size: 40px; line-height: 1.05">Why it costs less</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4B3326; max-width: 440px">Online only and low margins, because we think quality fragrance should be for everyone.</p>
@@ -228,7 +229,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 </section>
 
 
-<section style="max-width: 1320px; margin: 0 auto; padding: 24px 112px 60px; box-sizing: border-box">
+<section style="max-width: 1600px; margin: 0 auto; padding: 24px clamp(24px, 5vw, 80px) 60px; box-sizing: border-box">
 <h2 style="margin: 0 0 28px; text-align: center; font-family: 'Hanken Grotesk', sans-serif; font-weight: 400; letter-spacing: -0.02em; font-size: 24px; line-height: 1.2; margin-top: 20px">Shop by category</h2>
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 24px; max-width: 920px; margin: 0 auto">
 <a href="product-khamrah-qahwa.html" style="min-width: 0; display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #4B3326">
@@ -256,7 +257,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 <p style="margin: 0; font-size: 15px; line-height: 1.6; max-width: 420px; color: #F6F5F2; margin-top: 5px">From Weleda, Faith in Nature and Alter/native.</p><a href="search.html" style="margin-top: 20px; background: #F6F5F2; color: #4B3326; padding: 16px 28px; font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.04em; font-size: 12px; text-decoration: none">SHOP ALL</a>
 </section>
 
-<section style="max-width: 1320px; margin: 0 auto; box-sizing: border-box; padding: 64px 112px 16px">
+<section style="max-width: 1600px; margin: 0 auto; box-sizing: border-box; padding: 64px clamp(24px, 5vw, 80px) 16px">
 <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: 20px">
 <h2 style="margin: 0; font-family: 'Hanken Grotesk', sans-serif; font-weight: 400; letter-spacing: -0.02em; font-size: 24px; line-height: 1.2">Reviews</h2>
 <div style="display: flex; align-items: center; gap: 12px"><span role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 2px; color: #4B3326"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"></path></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"></path></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"></path></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"></path></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"></path></svg></span><span style="font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.04em; font-size: 12px">4.8  /  126 reviews</span></div>
@@ -286,7 +287,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 <a href="contact.html" style="margin-top: 8px; background: #4B3326; color: #F6F5F2; padding: 16px 28px; font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.04em; font-size: 12px; text-decoration: none">Discover your scent</a>
 </section>
 
-<section style="max-width: 1320px; margin: 0 auto; padding: 24px 112px 52px; box-sizing: border-box; text-align: center; padding-top: 35px; padding-bottom: 45px">
+<section style="max-width: 1600px; margin: 0 auto; padding: 24px clamp(24px, 5vw, 80px) 52px; box-sizing: border-box; text-align: center; padding-top: 35px; padding-bottom: 45px">
 <h2 style="margin: 0; font-family: 'Hanken Grotesk', sans-serif; font-weight: 400; letter-spacing: -0.02em; font-size: 24px; line-height: 1.2; margin-bottom: 20px">Brands</h2>
 <div style="border-top: 1px solid #E4E2DE; border-bottom: 1px solid #E4E2DE; padding: 16px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 0">
 <span style="padding: 0 32px; font-family: 'Hanken Grotesk', sans-serif; font-weight: 400; font-size: 17px; letter-spacing: 0; border-right: 1px solid #CFCBC5">Lattafa</span>
@@ -297,7 +298,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 </div>
 </section>
 
-<section id="faq" style="max-width: 1320px; margin: 0 auto; box-sizing: border-box; padding: 60px 112px 80px; display: flex; flex-wrap: wrap; gap: 32px 64px">
+<section id="faq" style="max-width: 1600px; margin: 0 auto; box-sizing: border-box; padding: 60px clamp(24px, 5vw, 80px) 80px; display: flex; flex-wrap: wrap; gap: 32px 64px">
 <h2 style="margin: 0; flex: 1 1 280px; font-family: 'Hanken Grotesk', sans-serif; font-weight: 300; letter-spacing: -0.03em; font-size: 48px; line-height: 1.1">FAQ</h2>
 <div style="flex: 2 1 520px; min-width: 0; border-top: 1px solid #CFCBC5">
 <details style="border-bottom: 1px solid #CFCBC5">
@@ -324,7 +325,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 </section>
 
 <footer style="background: #4B3326; color: #F6F5F2">
-<div style="max-width: 1320px; margin: 0 auto; padding: 52px 112px 0; box-sizing: border-box">
+<div style="max-width: 1600px; margin: 0 auto; padding: 52px clamp(24px, 5vw, 80px) 0; box-sizing: border-box">
 <div style="display: flex; flex-wrap: wrap; gap: 40px 72px">
 <div style="flex: 0 1 420px; min-width: 0; margin-right: auto; display: flex; flex-direction: column; gap: 10px">
 <h2 style="margin: 0; font-family: 'Hanken Grotesk', sans-serif; font-weight: 400; letter-spacing: -0.02em; font-size: 24px; line-height: 1.2">Sign up to our newsletter</h2>

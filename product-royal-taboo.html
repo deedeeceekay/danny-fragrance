@@ -28,6 +28,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 @keyframes fx-rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @keyframes fx-drop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){details::details-content{transition:none!important}*,*::before,*::after{animation:none!important;transition:opacity 100ms ease!important}details[open]>summary svg,button:active{transform:none!important}}
+#newin-row,[style*="overflow-x: auto"]{scrollbar-width:none}#newin-row::-webkit-scrollbar,[style*="overflow-x: auto"]::-webkit-scrollbar{display:none}
 </style>
 </head>
 <body>
@@ -35,7 +36,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 
 <div style="background: #4B3326; color: #F6F5F2; height: 28px; display: flex; align-items: center; justify-content: center; font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em">Dispatched from the UK  /  30-day returns</div>
 
-<header style="max-width: 1320px; margin: 0 auto; padding: 0 112px; box-sizing: border-box">
+<header style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(24px, 5vw, 80px); box-sizing: border-box">
 <div style="display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 58px">
 <a href="search.html" aria-label="Search" style="background: none; border: 0; padding: 12px; margin-left: -12px; cursor: pointer; color: #4B3326; display: flex; justify-self: start; text-decoration: none">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
@@ -59,7 +60,7 @@ input:focus,textarea:focus{border-color:#4B3326}
 </nav>
 </header>
 
-<section style="max-width: 1320px; margin: 0 auto; padding: 0 112px 60px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px">
+<section style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(24px, 5vw, 80px) 60px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px">
 <div style="flex: 999 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; align-content: start">
 <div style="aspect-ratio: 1 / 1; background: #F5F5F5; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #5E5650">Product image 1</div>
 <div style="aspect-ratio: 1 / 1; background: #F5F5F5; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #5E5650">Product image 2</div>
@@ -101,7 +102,7 @@ Add to cart</button>
 </div>
 </section>
 
-<section style="max-width: 1320px; margin: 0 auto; padding: 0 112px 60px; box-sizing: border-box">
+<section style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(24px, 5vw, 80px) 60px; box-sizing: border-box">
 <h2 style="margin: 0 0 20px; font-family: 'Hanken Grotesk', sans-serif; font-weight: 400; letter-spacing: -0.02em; font-size: 24px">You may also like</h2>
 <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px">
 <div style="flex: 0 0 316px; display: flex; flex-direction: column; text-decoration: none; color: #4B3326">
@@ -164,7 +165,7 @@ Add to cart</button>
 </section>
 
 <footer style="background: #4B3326; color: #F6F5F2">
-<div style="max-width: 1320px; margin: 0 auto; padding: 52px 112px 0; box-sizing: border-box">
+<div style="max-width: 1600px; margin: 0 auto; padding: 52px clamp(24px, 5vw, 80px) 0; box-sizing: border-box">
 <div style="display: flex; flex-wrap: wrap; gap: 40px 72px">
 <div style="flex: 0 1 420px; min-width: 0; margin-right: auto; display: flex; flex-direction: column; gap: 10px">
 <h2 style="margin: 0; font-family: 'Hanken Grotesk', sans-serif; font-weight: 400; letter-spacing: -0.02em; font-size: 24px; line-height: 1.2">Sign up to our newsletter</h2>
