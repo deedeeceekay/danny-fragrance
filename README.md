@@ -1,6 +1,6 @@
 # Fragrance & Cosmetics Store: static mockup
 
-Static HTML version of the store design (homepage, five product pages, search and contact). No build step and no dependencies.
+Static HTML version of the store design (homepage, five product pages, search and contact). The homepage switches to a dedicated phone layout below 750px wide. No build step and no dependencies.
 
 ## Run locally
 Open `index.html` in a browser, or serve the folder:
